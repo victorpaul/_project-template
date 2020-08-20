@@ -1,0 +1,41 @@
+plugins {
+    id 'org.springframework.boot' version '2.3.3.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
+    id 'idea'
+}
+
+group = 'com.projecttemplategroup'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    runtimeOnly 'org.postgresql:postgresql'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+//    testImplementation 'org.springframework.security:spring-security-test'
+
+    // https://mvnrepository.com/artifact/org.pac4j/pac4j-core
+    compile group: 'org.pac4j', name: 'pac4j-core', version: '4.0.1'
+    // https://mvnrepository.com/artifact/org.pac4j/spring-webmvc-pac4j
+    implementation group: 'org.pac4j', name: 'spring-webmvc-pac4j', version: '4.0.1'
+    // https://mvnrepository.com/artifact/org.pac4j/pac4j-http
+    implementation group: 'org.pac4j', name: 'pac4j-http', version: '4.0.1'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
