@@ -1,6 +1,6 @@
 package com.projecttemplategroup.projecttemplateartifact.security.authenticators;
 
-import com.projecttemplategroup.projecttemplateartifact.LoggedInUser;
+import com.projecttemplategroup.projecttemplateartifact.LoggedInDemoUser;
 import com.projecttemplategroup.projecttemplateartifact.exceptions.UnauthorizedException;
 import com.projecttemplategroup.projecttemplateartifact.security.Pac4jConfig;
 import org.hibernate.validator.internal.constraintvalidators.bv.EmailValidator;
@@ -25,7 +25,7 @@ public class SignInAuthenticator implements Authenticator<UsernamePasswordCreden
             if(password.equals("qwerty")){
 
                 // todo, its demo sign in logic, use your own implementation with DB
-                LoggedInUser user = new LoggedInUser(username);
+                LoggedInDemoUser user = new LoggedInDemoUser(username);
 
                 credentials.setUserProfile(Pac4jConfig.getProfile(user));
             }else{
