@@ -13,6 +13,4 @@ class HealthController {
 
   @GetMapping(Array("/v1-adm/ping")) def adminApi = "admin pong"
 
-  @GetMapping(Array("/v1-sup/ping")) def superApi = "super pong"
-
 }
