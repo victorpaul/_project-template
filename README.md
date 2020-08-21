@@ -1,2 +1,7 @@
 # project-template
-Just a template for new backend project on spring
+Spring boot template for new backend project
+Includes:
+- db connection (postgres)
+- pac4j security (signin, cookie, roles)
+- tests
+
