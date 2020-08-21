@@ -1,12 +1,13 @@
 package com.projecttemplategroup.projecttemplateartifact;
 
 import com.projecttemplategroup.projecttemplateartifact.security.UserRoleEnum;
+import com.projecttemplategroup.projecttemplateartifact.security.UserWithRole;
 
-// todo, demo user entity, use your own user implementation
+// todo, demo user entity, use your own user implementation that implements UserWithRole
 @Deprecated
-public class LoggedInDemoUser {
-    public long id;
-    public UserRoleEnum role;
+public class LoggedInDemoUser implements UserWithRole {
+    private long id;
+    private UserRoleEnum role;
 
     public LoggedInDemoUser(String username) {
         if (username.contains("admin")) {
@@ -22,10 +23,16 @@ public class LoggedInDemoUser {
     }
 
     @Override
+    public UserRoleEnum getRole() {
+        return role;
+    }
+
+    @Override
     public String toString() {
         return "LoggedInDemoUser{" +
                 "id=" + id +
                 ", role=" + role +
                 '}';
     }
+
 }

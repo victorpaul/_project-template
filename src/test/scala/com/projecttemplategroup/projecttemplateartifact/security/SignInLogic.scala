@@ -1,7 +1,7 @@
 package com.projecttemplategroup.projecttemplateartifact.security
 
-import com.projecttemplategroup.projecttemplateartifact.BaseSpringTest
 import org.springframework.http.{HttpEntity, HttpHeaders, HttpMethod, HttpStatus}
+import com.projecttemplategroup.projecttemplateartifact.BaseSpringTest
 
 class SignInLogic extends BaseSpringTest {
 

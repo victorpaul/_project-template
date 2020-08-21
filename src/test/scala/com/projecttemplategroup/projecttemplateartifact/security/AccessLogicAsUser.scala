@@ -1,7 +1,7 @@
 package com.projecttemplategroup.projecttemplateartifact.security
 
-import com.projecttemplategroup.projecttemplateartifact.BaseSpringTest
 import org.springframework.http.{HttpEntity, HttpMethod, HttpStatus, ResponseEntity}
+import com.projecttemplategroup.projecttemplateartifact.BaseSpringTest
 
 class AccessLogicAsUser extends BaseSpringTest {
 

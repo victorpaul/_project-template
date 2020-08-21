@@ -1,8 +1,16 @@
-# project-template
+# What is it?
 Spring boot template for new backend project
-Includes:
-- db connection (postgres)
+
+#What included?
 - scala support
-- pac4j security (signin, cookie, roles)
-- tests
+- implemented security with pac4j
+- everything is covered with tests
+
+#How to start?
+- open project with intellij idea IDE
+- Go to settings of IDE, find option "Run tests using" set it to "With Intellij Idea"
+- let gradle to download all dependencies
+- open module settings, install scala 2.13 globally
+- change db credentials in application-test.properties, application-local.properties
+- you are ready to go, follow all todos in project to override logic that was made for demo purpose
 
