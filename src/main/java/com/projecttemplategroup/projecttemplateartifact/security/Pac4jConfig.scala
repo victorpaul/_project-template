@@ -1,6 +1,5 @@
 package com.projecttemplategroup.projecttemplateartifact.security
 
-import com.projecttemplategroup.projecttemplateartifact.LoggedInDemoUser
 import com.projecttemplategroup.projecttemplateartifact.security.authenticators.SessionAuthenticator
 import com.projecttemplategroup.projecttemplateartifact.security.authenticators.SignInAuthenticator
 import com.projecttemplategroup.projecttemplateartifact.utils.SecurityUtils

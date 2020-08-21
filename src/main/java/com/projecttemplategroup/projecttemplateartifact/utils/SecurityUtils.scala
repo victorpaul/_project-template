@@ -13,7 +13,7 @@ trait SecurityUtils {
 
 }
 
-@Component
+@Service
 class SecurityUtilsImpl extends SecurityUtils {
 
   override def getUserByCredentials(username: String, password: String): Option[UserWithRole] = {
