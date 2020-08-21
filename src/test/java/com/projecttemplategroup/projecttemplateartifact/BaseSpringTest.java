@@ -30,8 +30,8 @@ abstract public class BaseSpringTest {
 
     protected HttpHeaders cookieHeader(String token) {
         HttpHeaders headers = new HttpHeaders();
-        headers.add(Pac4jConfig.HEADER_TOKEN_NAME, token);
-        headers.add(HttpHeaders.COOKIE, String.format("%s=%s; Max-Age=28800; Expires=Fri, 14-Jun-2019 23:17:59 GMT; HttpOnly", Pac4jConfig.HEADER_TOKEN_NAME, token));
+//        headers.add(Pac4jConfig.HEADER_TOKEN_NAME, token);
+        headers.add(HttpHeaders.COOKIE, String.format("%s=%s; Max-Age=28800;HttpOnly", Pac4jConfig.HEADER_TOKEN_NAME, token));
         return headers;
     }
 

@@ -1,7 +1,6 @@
 package com.projecttemplategroup.projecttemplateartifact.security
 
 import com.projecttemplategroup.projecttemplateartifact.BaseSpringFeatureTest
-
 import org.springframework.http.{HttpEntity, HttpMethod, HttpStatus}
 
 class scalaSignInLogic extends BaseSpringFeatureTest {
