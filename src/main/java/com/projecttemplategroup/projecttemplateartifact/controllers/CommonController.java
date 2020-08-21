@@ -3,6 +3,7 @@ package com.projecttemplategroup.projecttemplateartifact.controllers;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+//todo move to scala
 @RestController
 public class CommonController {
 

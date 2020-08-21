@@ -7,7 +7,7 @@ import org.springframework.http.*;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+//todo move to scala
 class AccessLogicAsUser extends BaseSpringTest {
 
     @Test

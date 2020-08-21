@@ -3,6 +3,7 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.10.RELEASE'
     id 'java'
     id 'idea'
+    id 'scala'
 }
 
 group = 'com.projecttemplategroup'
@@ -32,6 +33,10 @@ dependencies {
     // https://mvnrepository.com/artifact/org.pac4j/pac4j-http
     implementation group: 'org.pac4j', name: 'pac4j-http', version: '4.0.1'
 
+    // https://mvnrepository.com/artifact/org.scala-lang/scala-library
+    compile group: 'org.scala-lang', name: 'scala-library', version: '2.13.3'
+    // https://mvnrepository.com/artifact/org.scalatest/scalatest
+    testCompile group: 'org.scalatest', name: 'scalatest_2.13', version: '3.3.0-SNAP2'
 
 }
 

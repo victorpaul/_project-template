@@ -9,6 +9,7 @@ import org.pac4j.core.profile.ProfileManager;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+//todo move to scala
 abstract public class SecurityController {
 
     public LoggedInDemoUser getSignedInProfile(HttpServletRequest request, HttpServletResponse response) {

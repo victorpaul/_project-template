@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+//todo move to scala
 class AccessLogicAsAdmin extends BaseSpringTest {
 
     @Test

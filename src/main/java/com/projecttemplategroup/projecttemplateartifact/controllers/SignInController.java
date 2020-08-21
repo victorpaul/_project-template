@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+//todo move to scala
 @RestController
 public class SignInController extends SecurityController{
 

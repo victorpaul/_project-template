@@ -6,7 +6,7 @@ import org.springframework.http.*;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+//todo move to scala
 class SignInLogic extends BaseSpringTest {
 
     @Test
