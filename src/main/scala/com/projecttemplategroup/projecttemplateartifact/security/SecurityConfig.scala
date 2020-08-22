@@ -1,6 +1,5 @@
 package com.projecttemplategroup.projecttemplateartifact.security
 
-import com.projecttemplategroup.projecttemplateartifact.CorsConfigs
 import com.projecttemplategroup.projecttemplateartifact.enums.UserRoleEnum
 import org.pac4j.core.config.Config
 import org.pac4j.springframework.annotation.AnnotationConfig

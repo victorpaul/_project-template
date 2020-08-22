@@ -35,8 +35,7 @@ class CORSCheck extends BaseSpringTest {
         ("X-Frame-Options", Seq("sameorigin")),
         ("Strict-Transport-Security", Seq("max-age=31536000; includeSubDomains")),
         ("X-XSS-Protection", Seq("1; mode=block")),
-        ("Content-Security-Policy-Report-Only", Seq("default-src 'self';")),
-        ("WWW-Authenticate", Seq(""))
+        ("Content-Security-Policy-Report-Only", Seq("default-src 'self';"))
       ).foreach(kv => {
         resp.getHeaders.get(kv._1).asScala.toSeq shouldBe kv._2
       });

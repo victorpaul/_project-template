@@ -4,6 +4,7 @@ Spring boot template for new backend project
 #What included?
 - scala support
 - implemented security with pac4j
+- cors
 - everything is covered with tests
 
 #How to start?

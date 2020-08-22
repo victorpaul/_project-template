@@ -17,9 +17,6 @@ public class LoggedInDemoUser implements UserWithRole {
         } else if (username.contains("user")) {
             this.id = 3;
             this.role = UserRoleEnum.USER;
-        } else {
-            this.id = -1;
-            this.role = null;
         }
     }
 

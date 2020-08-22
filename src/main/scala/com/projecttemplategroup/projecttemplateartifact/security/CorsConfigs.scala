@@ -1,8 +1,8 @@
-package com.projecttemplategroup.projecttemplateartifact
+package com.projecttemplategroup.projecttemplateartifact.security
 
 import javax.servlet.http.{HttpServletRequest, HttpServletResponse}
 import org.springframework.http.HttpStatus
-import org.springframework.web.servlet.HandlerInterceptor
+import org.springframework.web.servlet.{HandlerInterceptor}
 
 class CorsConfigs(allowedHeader: Seq[String]) extends HandlerInterceptor {
 
@@ -23,10 +23,8 @@ class CorsConfigs(allowedHeader: Seq[String]) extends HandlerInterceptor {
       response.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains")
       response.setHeader("X-XSS-Protection", "1; mode=block")
       response.setHeader("Content-Security-Policy-Report-Only", "default-src 'self';")
-      response.setHeader("WWW-Authenticate", "")
     }
 
-    // we should not process OPTION request
     request.getMethod.toUpperCase() != "OPTIONS"
   }
 
