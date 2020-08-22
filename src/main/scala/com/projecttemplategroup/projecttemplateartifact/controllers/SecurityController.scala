@@ -1,8 +1,8 @@
 package com.projecttemplategroup.projecttemplateartifact.controllers
 
-import com.projecttemplategroup.projecttemplateartifact.security.UserWithRole
+import com.projecttemplategroup.projecttemplateartifact.interfaces.UserWithRole
 import javax.servlet.http.{HttpServletRequest, HttpServletResponse}
-import org.pac4j.core.context.{JEEContext}
+import org.pac4j.core.context.JEEContext
 import org.pac4j.core.profile.{CommonProfile, ProfileManager}
 
 abstract class SecurityController {

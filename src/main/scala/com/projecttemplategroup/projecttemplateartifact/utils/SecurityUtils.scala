@@ -1,7 +1,7 @@
 package com.projecttemplategroup.projecttemplateartifact.utils
 
 import com.projecttemplategroup.projecttemplateartifact.LoggedInDemoUser
-import com.projecttemplategroup.projecttemplateartifact.security.UserWithRole
+import com.projecttemplategroup.projecttemplateartifact.interfaces.UserWithRole
 import org.hibernate.validator.internal.constraintvalidators.bv.EmailValidator
 import org.springframework.stereotype.{Component, Service}
 

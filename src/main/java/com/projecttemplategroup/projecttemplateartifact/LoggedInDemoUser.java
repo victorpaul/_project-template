@@ -1,7 +1,8 @@
 package com.projecttemplategroup.projecttemplateartifact;
 
-import com.projecttemplategroup.projecttemplateartifact.security.UserRoleEnum;
-import com.projecttemplategroup.projecttemplateartifact.security.UserWithRole;
+
+import com.projecttemplategroup.projecttemplateartifact.enums.UserRoleEnum;
+import com.projecttemplategroup.projecttemplateartifact.interfaces.UserWithRole;
 
 // todo, demo user entity, use your own user implementation that implements UserWithRole
 @Deprecated

@@ -1,20 +1,9 @@
 package com.projecttemplategroup.projecttemplateartifact.security
 
-import org.springframework.http.{HttpEntity, HttpHeaders, HttpMethod, HttpStatus}
+import org.springframework.http.{HttpEntity, HttpMethod, HttpStatus}
 import com.projecttemplategroup.projecttemplateartifact.BaseSpringTest
 
 class SignInLogic extends BaseSpringTest {
-
-  Feature("anybody can ping"){
-
-    Scenario("success ping by anonymous"){
-      val resp = restTemplate.exchange("/ping", HttpMethod.GET, new HttpEntity[String](new HttpHeaders), classOf[String])
-
-      resp.getStatusCode shouldBe HttpStatus.OK
-      resp.getBody shouldBe "pong"
-    }
-
-  }
 
   Feature("Check user signing in") {
 

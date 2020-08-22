@@ -1,5 +1,7 @@
 package com.projecttemplategroup.projecttemplateartifact.security
 
+import com.projecttemplategroup.projecttemplateartifact.enums.UserRoleEnum
+import com.projecttemplategroup.projecttemplateartifact.interfaces.UserWithRole
 import com.projecttemplategroup.projecttemplateartifact.security.authenticators.SessionAuthenticator
 import com.projecttemplategroup.projecttemplateartifact.security.authenticators.SignInAuthenticator
 import com.projecttemplategroup.projecttemplateartifact.utils.SecurityUtils

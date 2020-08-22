@@ -1,7 +1,7 @@
 package com.projecttemplategroup.projecttemplateartifact.security.authenticators
 
 import com.projecttemplategroup.projecttemplateartifact.exceptions.UnauthorizedException
-import com.projecttemplategroup.projecttemplateartifact.security.{Pac4jConfig, UserWithRole}
+import com.projecttemplategroup.projecttemplateartifact.security.{Pac4jConfig}
 import com.projecttemplategroup.projecttemplateartifact.utils.SecurityUtils
 import org.pac4j.core.context.WebContext
 import org.pac4j.core.credentials.UsernamePasswordCredentials
