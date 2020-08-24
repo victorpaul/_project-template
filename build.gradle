@@ -43,3 +43,7 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+
+compileScala.dependsOn(compileJava) // scala depends on java code
+sourceSets.main.scala.outputDir = file("build/classes/java/main") // compiled scala bin should go to java
