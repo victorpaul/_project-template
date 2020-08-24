@@ -13,10 +13,10 @@ class CORSCheck extends BaseSpringTest {
 
       resp.getStatusCode shouldBe HttpStatus.OK
       resp.getBody shouldBe null
-
+      val headers = resp.getHeaders
       Seq(
         ("Access-Control-Allow-Credentials", Seq("true")),
-        ("Access-Control-Allow-Methods", Seq("GET,POST,PUT,DELETE,HEAD")),
+        ("Access-Control-Allow-Methods", Seq("GET,POST,PUT,DELETE")),
         ("Access-Control-Allow-Headers", Seq(s"Authorization,TOKEN,Origin,X-Requested-With,Content-Type,Accept"))
       ).foreach(kv => {
         resp.getHeaders.get(kv._1).asScala.toSeq shouldBe kv._2
@@ -29,13 +29,11 @@ class CORSCheck extends BaseSpringTest {
       resp.getStatusCode shouldBe HttpStatus.OK
       resp.getBody shouldBe "pong"
 
+      val headers = resp.getHeaders
       Seq(
         ("Access-Control-Allow-Credentials", Seq("true")),
-        ("Referrer-Policy", Seq("origin-when-cross-origin")),
-        ("X-Frame-Options", Seq("sameorigin")),
-        ("Strict-Transport-Security", Seq("max-age=31536000; includeSubDomains")),
-        ("X-XSS-Protection", Seq("1; mode=block")),
-        ("Content-Security-Policy-Report-Only", Seq("default-src 'self';"))
+        ("Access-Control-Allow-Methods", Seq("GET,POST,PUT,DELETE")),
+        ("Access-Control-Allow-Headers", Seq(s"Authorization,TOKEN,Origin,X-Requested-With,Content-Type,Accept"))
       ).foreach(kv => {
         resp.getHeaders.get(kv._1).asScala.toSeq shouldBe kv._2
       });
