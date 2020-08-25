@@ -2,8 +2,10 @@ package com.projecttemplategroup.projecttemplateartifact
 
 import java.util.Base64
 
-import org.scalatest.featurespec.AnyFeatureSpecLike
+import org.junit.runner.RunWith
+import org.scalatest.featurespec.{AnyFeatureSpec}
 import org.scalatest.matchers.should.Matchers
+import org.scalatestplus.junit.JUnitRunner
 import org.skyscreamer.jsonassert.JSONAssert.assertEquals
 import org.springframework.beans.factory.annotation.{Autowired, Value}
 import org.springframework.boot.test.context.SpringBootTest
@@ -11,10 +13,11 @@ import org.springframework.boot.test.web.client.TestRestTemplate
 import org.springframework.http.HttpHeaders
 import org.springframework.test.context.{ContextConfiguration, TestContextManager, TestPropertySource}
 
+@RunWith(classOf[JUnitRunner])
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @TestPropertySource(locations = Array("classpath:application-test.properties"))
 @ContextConfiguration(classes = Array(classOf[ProjecttemplateartifactApplication]))
-abstract class BaseSpringTest extends AnyFeatureSpecLike with Matchers {
+abstract class BaseSpringTest extends AnyFeatureSpec with Matchers {
 
   @Value("${security.tokenname}")
   var tokenName: String = _
