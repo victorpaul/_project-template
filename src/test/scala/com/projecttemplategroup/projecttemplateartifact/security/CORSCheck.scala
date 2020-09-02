@@ -15,7 +15,7 @@ class CORSCheck extends BaseSpringTest {
       resp.getBody shouldBe null
       val headers = resp.getHeaders
       Seq(
-        ("Access-Control-Allow-Credentials", Seq("true")),
+        ("Access-Control-Allow-Credentials", Seq("TRUE")),
         ("Access-Control-Allow-Methods", Seq("GET,POST,PUT,DELETE")),
         ("Access-Control-Allow-Headers", Seq(s"Authorization,TOKEN,Origin,X-Requested-With,Content-Type,Accept"))
       ).foreach(kv => {
@@ -31,7 +31,7 @@ class CORSCheck extends BaseSpringTest {
 
       val headers = resp.getHeaders
       Seq(
-        ("Access-Control-Allow-Credentials", Seq("true")),
+        ("Access-Control-Allow-Credentials", Seq("TRUE")),
         ("Access-Control-Allow-Methods", Seq("GET,POST,PUT,DELETE")),
         ("Access-Control-Allow-Headers", Seq(s"Authorization,TOKEN,Origin,X-Requested-With,Content-Type,Accept"))
       ).foreach(kv => {

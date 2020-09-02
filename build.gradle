@@ -37,6 +37,8 @@ dependencies {
     implementation group: 'org.scala-lang', name: 'scala-library', version: '2.13.3'
     // https://mvnrepository.com/artifact/org.scalatest/scalatest
     testCompile group: 'org.scalatest', name: 'scalatest_2.13', version: '3.2.0'
+    // https://mvnrepository.com/artifact/org.scalamock/scalamock
+    testCompile group: 'org.scalamock', name: 'scalamock_2.13', version: '5.0.0'
     // https://mvnrepository.com/artifact/org.scalatestplus/scalatestplus-junit
     compile group: 'org.scalatestplus', name: 'scalatestplus-junit_2.13', version: '1.0.0-M2'
 

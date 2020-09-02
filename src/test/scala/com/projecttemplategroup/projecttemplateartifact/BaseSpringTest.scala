@@ -3,7 +3,8 @@ package com.projecttemplategroup.projecttemplateartifact
 import java.util.Base64
 
 import org.junit.runner.RunWith
-import org.scalatest.featurespec.{AnyFeatureSpec}
+import org.scalatest.GivenWhenThen
+import org.scalatest.featurespec.AnyFeatureSpec
 import org.scalatest.matchers.should.Matchers
 import org.scalatestplus.junit.JUnitRunner
 import org.skyscreamer.jsonassert.JSONAssert.assertEquals
@@ -17,7 +18,7 @@ import org.springframework.test.context.{ContextConfiguration, TestContextManage
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @TestPropertySource(locations = Array("classpath:application-test.properties"))
 @ContextConfiguration(classes = Array(classOf[ProjecttemplateartifactApplication]))
-abstract class BaseSpringTest extends AnyFeatureSpec with Matchers {
+abstract class BaseSpringTest extends AnyFeatureSpec with Matchers with GivenWhenThen{
 
   @Value("${security.tokenname}")
   var tokenName: String = _
